@@ -27,18 +27,9 @@ sequenceDiagram
 participant srv as "A service"
 participant mb as "MainBot" 
 participant tg as "Telegram\nservice"
-actor usr as "User"
+participant usr as "User"
 
 usr -> tg : Request infromation
-tg -> mb : Request information by user
-mb -> mb : Identify type of infromation
-mb -> mb : Find internal message id for this request
-mb -> tg : Delete internal MessageId for this user
-mb -> srv : Request infromation
-mb <-- srv: Response information
-mb -> mb : Generate telegram messages
-mb -> tg : Send messages 
-tg -> usr: Send new messages\n[because message id was deleted]
 ```
 
 
