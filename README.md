@@ -34,12 +34,6 @@ usr -> tg : Request infromation
 
 srv -> mb : Status changed
 note right mb : Find internal MessageId\nfor changing status from the service\n\nIf a MessageId doesn't exist\nit will be generated
-alt Find MessageId
-mb -> mb : Find\ninternal message id
-else MessageId doesn't find
-mb -> mb : Generate\ninternal message id
-
-end
 
 ```
 
