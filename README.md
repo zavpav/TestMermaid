@@ -28,13 +28,9 @@ participant srv as "A service"
 participant mb as "MainBot" 
 participant tg as "Telegram\nservice"
 actor usr as "User"
-
-
 usr -> tg : Request infromation
-
 srv -> mb : Status changed
 note right mb : Find internal MessageId\nfor changing status from the service\n\nIf a MessageId doesn't exist\nit will be generated
-
 ```
 
 
