@@ -24,10 +24,10 @@ sequenceDiagram
 
 ```mermaid
 sequenceDiagram
-participant "A service" as srv
-participant "MainBot" as mb
-participant "Telegram\nservice" as tg
-actor "User" as usr
+participant srv as "A service"
+participant mb as "MainBot" 
+participant tg as "Telegram\nservice"
+actor usr as "User"
 
 usr -> tg : Request infromation
 tg -> mb : Request information by user
