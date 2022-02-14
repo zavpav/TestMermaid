@@ -11,7 +11,7 @@ Test mermaid
 
 ```mermaid
 sequenceDiagram
-    Alice->>Bob: Hello Bob, how are you?
+    Alice->Bob: Hello Bob, how are you?
     alt is sick
         Bob->>Alice: Not so good :(
     else is well
