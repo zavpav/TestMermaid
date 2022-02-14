@@ -31,6 +31,13 @@ actor usr as "User"
 
 usr -> tg : Request infromation
 srv -> mb : Status changed
+
+alt Find MessageId
+mb -> mb : Find\ninternal message id
+else MessageId doesn't find
+mb -> mb : Generate\ninternal message id
+end
+
 ```
 
 
