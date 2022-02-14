@@ -27,7 +27,7 @@ sequenceDiagram
 participant srv as "A service"
 participant mb as "MainBot" 
 participant tg as "Telegram\nservice"
-actor usr
+actor usr as "User ppp"
 
 usr -> tg : Request infromation
 ```
